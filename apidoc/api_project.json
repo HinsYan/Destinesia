@@ -1,0 +1,15 @@
+{
+  "name": "Destinesia",
+  "version": "1.0.0",
+  "description": "Restful 接口文档",
+  "title": "Destinesia Restful API DOC",
+  "url": "",
+  "sampleUrl": false,
+  "apidoc": "0.2.0",
+  "generator": {
+    "name": "apidoc",
+    "time": "2016-09-28T01:48:33.977Z",
+    "url": "http://apidocjs.com",
+    "version": "0.16.1"
+  }
+}

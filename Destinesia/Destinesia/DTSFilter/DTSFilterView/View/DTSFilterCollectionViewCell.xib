@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DTSFilterCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="100"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Mq-Gb-uie">
+                        <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="A8Q-4F-lyN"/>
+                        </constraints>
+                    </imageView>
+                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdH-Iz-EHd">
+                        <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconFilterSelected" translatesAutoresizingMaskIntoConstraints="NO" id="Wjv-Q9-cdf">
+                        <rect key="frame" x="18" y="28" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="ICN-Wf-zBO"/>
+                            <constraint firstAttribute="width" secondItem="Wjv-Q9-cdf" secondAttribute="height" multiplier="1:1" id="MlV-Nk-Pat"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labels" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAu-1b-ysR">
+                        <rect key="frame" x="0.0" y="80" width="60" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.31372549020000001" green="0.89019607840000003" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="Wjv-Q9-cdf" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="5GF-HY-Zcd"/>
+                <constraint firstItem="8Mq-Gb-uie" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="71Q-Mn-uUL"/>
+                <constraint firstAttribute="trailing" secondItem="aAu-1b-ysR" secondAttribute="trailing" id="9S0-vr-Ph4"/>
+                <constraint firstAttribute="bottom" secondItem="8Mq-Gb-uie" secondAttribute="bottom" id="AYo-Zz-ltf"/>
+                <constraint firstItem="Wjv-Q9-cdf" firstAttribute="centerX" secondItem="bdH-Iz-EHd" secondAttribute="centerX" id="Bgu-9o-Lrn"/>
+                <constraint firstItem="bdH-Iz-EHd" firstAttribute="centerY" secondItem="8Mq-Gb-uie" secondAttribute="centerY" id="D1o-3g-qwx"/>
+                <constraint firstItem="aAu-1b-ysR" firstAttribute="top" secondItem="8Mq-Gb-uie" secondAttribute="bottom" id="INw-Ct-Hvr"/>
+                <constraint firstItem="bdH-Iz-EHd" firstAttribute="centerX" secondItem="8Mq-Gb-uie" secondAttribute="centerX" id="L7r-dn-QlP"/>
+                <constraint firstAttribute="bottom" secondItem="aAu-1b-ysR" secondAttribute="bottom" id="S1M-r3-B2r"/>
+                <constraint firstItem="Wjv-Q9-cdf" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="XBo-1f-WDa"/>
+                <constraint firstItem="Wjv-Q9-cdf" firstAttribute="centerY" secondItem="bdH-Iz-EHd" secondAttribute="centerY" id="kax-rw-UIx"/>
+                <constraint firstItem="bdH-Iz-EHd" firstAttribute="width" secondItem="8Mq-Gb-uie" secondAttribute="width" id="q21-zz-HqX"/>
+                <constraint firstAttribute="trailing" secondItem="8Mq-Gb-uie" secondAttribute="trailing" id="qXe-Cb-bQC"/>
+                <constraint firstItem="bdH-Iz-EHd" firstAttribute="height" secondItem="8Mq-Gb-uie" secondAttribute="height" id="u8R-7d-RgC"/>
+                <constraint firstItem="aAu-1b-ysR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wqu-5q-3kG"/>
+                <constraint firstItem="8Mq-Gb-uie" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yvz-vc-RCe"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="AYo-Zz-ltf"/>
+                    <exclude reference="5GF-HY-Zcd"/>
+                    <exclude reference="XBo-1f-WDa"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="iconFilterSelected" destination="Wjv-Q9-cdf" id="Dwe-9G-E9e"/>
+                <outlet property="imageView" destination="8Mq-Gb-uie" id="wTD-5g-5Q3"/>
+                <outlet property="label" destination="aAu-1b-ysR" id="qpu-HD-087"/>
+                <outlet property="maskView" destination="bdH-Iz-EHd" id="aEo-Rd-DIG"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="iconFilterSelected" width="25" height="25"/>
+    </resources>
+</document>

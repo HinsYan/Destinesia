@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fEJ-NC-jc6" customClass="DTSPermissionView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mTt-nx-iKe">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="500"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconLogo" translatesAutoresizingMaskIntoConstraints="NO" id="TdU-f1-cSy">
+                            <rect key="frame" x="85" y="75" width="150" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="UJE-TF-6e0"/>
+                                <constraint firstAttribute="width" secondItem="TdU-f1-cSy" secondAttribute="height" multiplier="1:1" id="m8M-Ej-N5d"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destinesia 需要获取相机权限" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uej-R8-bDk">
+                            <rect key="frame" x="0.0" y="235" width="320" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="hav-3x-GSS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aN-pQ-jrq">
+                            <rect key="frame" x="50" y="275" width="220" height="50"/>
+                            <color key="backgroundColor" red="0.0" green="0.70196078429999997" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="aO0-4a-v09"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="允许使用">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="actionBtnAllow:" destination="fEJ-NC-jc6" eventType="touchUpInside" id="GGt-fM-5Ut"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="9aN-pQ-jrq" secondAttribute="trailing" constant="50" id="LNr-cr-iP2"/>
+                        <constraint firstItem="TdU-f1-cSy" firstAttribute="centerX" secondItem="mTt-nx-iKe" secondAttribute="centerX" id="LwI-YZ-cfu"/>
+                        <constraint firstItem="Uej-R8-bDk" firstAttribute="top" secondItem="TdU-f1-cSy" secondAttribute="bottom" constant="10" id="V00-Gk-1be"/>
+                        <constraint firstItem="TdU-f1-cSy" firstAttribute="centerY" secondItem="mTt-nx-iKe" secondAttribute="centerY" constant="-100" id="VQv-hn-sOo"/>
+                        <constraint firstItem="9aN-pQ-jrq" firstAttribute="leading" secondItem="mTt-nx-iKe" secondAttribute="leading" constant="50" id="a9g-uT-558"/>
+                        <constraint firstItem="9aN-pQ-jrq" firstAttribute="top" secondItem="Uej-R8-bDk" secondAttribute="bottom" constant="10" id="bSv-9Y-Ccs"/>
+                        <constraint firstItem="Uej-R8-bDk" firstAttribute="leading" secondItem="mTt-nx-iKe" secondAttribute="leading" id="bTI-Nk-lYn"/>
+                        <constraint firstAttribute="trailing" secondItem="Uej-R8-bDk" secondAttribute="trailing" id="nmJ-yH-5eC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="mTt-nx-iKe" secondAttribute="bottom" id="6Hf-xW-Pi4"/>
+                <constraint firstItem="mTt-nx-iKe" firstAttribute="top" secondItem="fEJ-NC-jc6" secondAttribute="top" id="DBs-Df-7Wa"/>
+                <constraint firstAttribute="trailing" secondItem="mTt-nx-iKe" secondAttribute="trailing" id="Khq-UR-4hq"/>
+                <constraint firstItem="mTt-nx-iKe" firstAttribute="leading" secondItem="fEJ-NC-jc6" secondAttribute="leading" id="egM-XT-E2J"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnAllow" destination="9aN-pQ-jrq" id="vAw-TZ-Eu8"/>
+                <outlet property="imageView" destination="TdU-f1-cSy" id="A6w-mL-a8G"/>
+                <outlet property="lbTip" destination="Uej-R8-bDk" id="3fT-Bg-8Jy"/>
+            </connections>
+            <point key="canvasLocation" x="302" y="355"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconLogo" width="100" height="100"/>
+    </resources>
+</document>

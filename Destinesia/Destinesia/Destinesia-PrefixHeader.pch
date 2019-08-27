@@ -1,0 +1,33 @@
+//
+//  Destinesia-PrefixHeader.pch
+//  Destinesia
+//
+//  Created by Chris Hu on 16/8/26.
+//  Copyright © 2016年 com.icetime17. All rights reserved.
+//
+
+#ifndef Destinesia_PrefixHeader_pch
+#define Destinesia_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+
+#import "AppMacro.h"
+#import "UtilsMacro.h"
+#import "AppConstant.h"
+
+#import "DTSToastUtil.h"
+#import "DTSUserDefaults.h"
+#import "DTSDateFormatter.h"
+#import "DTSLocation.h"
+#import "DTSAlbumManager.h"
+#import "DTSHTTPRequest.h"
+#import "DTSPhotoDownloader.h"
+#import "DTSDiskUtil.h"
+#import "UIImage+DTSCategory.h"
+
+#endif /* Destinesia_PrefixHeader_pch */

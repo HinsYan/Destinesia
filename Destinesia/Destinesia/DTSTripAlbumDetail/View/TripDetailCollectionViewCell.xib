@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TripDetailCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Model.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Jt-K6-4eP"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xJj-we-nGB" customClass="ViewDateLocationWatermark">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="PvW-L5-Ly9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xJj-we-nGB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="EJr-o9-WVa"/>
+                <constraint firstItem="9Jt-K6-4eP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OGO-dG-41P"/>
+                <constraint firstItem="xJj-we-nGB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VFd-xB-McC"/>
+                <constraint firstAttribute="trailing" secondItem="9Jt-K6-4eP" secondAttribute="trailing" id="W0u-23-92I"/>
+                <constraint firstItem="9Jt-K6-4eP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eZd-sn-Esp"/>
+                <constraint firstAttribute="bottom" secondItem="9Jt-K6-4eP" secondAttribute="bottom" id="lf3-j1-HqP"/>
+                <constraint firstItem="xJj-we-nGB" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="shJ-ju-BXv"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="9Jt-K6-4eP" id="R43-XX-Khg"/>
+                <outlet property="viewDateLocationWatermark" destination="xJj-we-nGB" id="b2t-Cy-nH4"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="Model.png" width="1444" height="2000"/>
+    </resources>
+</document>
